@@ -1,0 +1,15 @@
+<form action="/student/create" method="post">
+  {% csrf_token %}
+  <h3>Create Student</h3>
+  {{form.name.label}}: {{ form.name }}
+  <br/><br />
+  {{ form.email.label}}: {{ form.email}}
+  <br/><br />
+  {{ form.department.label}}: {{ form.department}}
+  <br /><br />
+  {{ form.subjects.label}}: {{ form.subjects}}
+  <br /><br />
+  {{ form.gender.label}}: {{ form.gender}}
+  <br /><br />
+  <input type="submit" value="Submit">
+</form>
